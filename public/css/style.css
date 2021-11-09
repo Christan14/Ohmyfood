@@ -65,4 +65,71 @@ main .city i{
     transform: scale(1.2);
     opacity: 0.9;
 }
+
+main{
+  padding: 0 7rem;
+}
+.fonction ol{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.fonction li{
+    position: relative;
+    background-color: #f6f6f6;
+    padding; 1.5rem 2rem; 
+    border: 1px solid red;
+    flex-grow: 1;
+    border-radius: 1rem;
+    box-shadow: 2px 1px 8px -3px #000000;
+    list-style-type: none;
+}
+
+li i.fas{
+    color: blue;
+    margin-right: 1rem;
+}
+.fonction li::before{
+    content: counter(setps);
+    counter-increment: steps; 
+    color: white;
+    background-color: #9356dc;
+    border-radius: 50%;
+    position: absolute;
+    width: 2rem;
+    heght: 1rem;
+    display: grid;
+    place-items: center;
+    left: -2rem;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.fonction li:hover{
+    transform: scale(1.02)
+}
+
+.menu{
+    background-color: #f6f6f6;
+}
+
+.menu .cards{
+    border: 1px solid black;
+    heght: 4rem;
+    flex-grow: 1;
+    min-width: 30px;
+}
+
+.menu .menu_cards{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cards .card_image{
+    background-image: url("./images./restaurants/menu1.jpg");
+    height: 15rem;
+    background-size: cover;
+}
+
+
 /*# sourceMappingURL=style.css.map */
