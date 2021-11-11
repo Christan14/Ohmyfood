@@ -1,55 +1,10 @@
-
-header{
-    font-family : 'Shrikhand', cursif ;
-    text-align: center;
-    box-shadow: 0px 2px 2px grey;
-    padding: 0.1rem;
-    position: relative;
-}
-
-
-main .city{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    text-align: center;
-    background-color: #f3f3f3;
-    padding: 0.1rem;
-}
-
-main .city i{
-    font-size: 1.5rem;
-}
-
-/* explorer */
-
-.explorer{
-    text-align: center;
-}
-
-.explorer h2{
-    margin-top: 2rem;
-    font-size: 2rem;
-}
-.explorer p{
-    font-size: 1rem;
-}
-.explorer button{
-    color: white;
-    font-weight: 300;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 2rem;
-    box-shadow: 2px 1px 8px -3px #000000;
-    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0,9));
-    transition: transform 200ms;
-}
- 
-
-.explorer button:hover{
-    transform: scale(1.2);
-    opacity: 0.9;
-}
-
+@import "./sass/base.scss";
+@import "./layout/header.scss";
+@import "./layout/city.scss";
+@import "./layout/explorer.scss";
+@import "./utils/function.scss";
+@import "./layout/function.scss";
+@import "./utils/box-shadow.scss";
+@import "./utils/zoom.scss";
+@import "./layout/menus.scss";
+@import "./layout/footer.scss";

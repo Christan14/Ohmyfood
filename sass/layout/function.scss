@@ -1,0 +1,35 @@
+
+.fonction{
+    & ol{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+    }    
+    & li{
+        position: relative;
+        //display: flex;
+        background-color: #f6f6f6;
+        padding: 1.5rem 2rem; 
+        //border: 1px solid red;
+        flex-grow: 1;
+        border-radius: 1rem;
+        box-shadow: 2px 1px 8px -3px #000000;
+        //list-style-type: none;
+        //@include box-shadow;
+        &:hover{
+           //@include zoom;
+        }  
+    }
+
+    & i.fas{
+            color: blue;
+            margin-right: 1rem;
+    }
+       
+    li{
+      
+    }
+}

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+::before
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid red;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  margin: 0 7rem;
+}
+
+header {
+  font-family: 'Shrikhand', cursif;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 2px grey;
+          box-shadow: 0px 2px 2px grey;
+  padding: 0.1rem;
+  position: relative;
+}
+
+main .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 0.1rem;
+}
+
+main .city i {
+  font-size: 1.5rem;
+}
+
+.explorer {
+  text-align: center;
+}
+
+.explorer h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.explorer p {
+  font-size: 1rem;
+}
+
+.explorer button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  -webkit-box-shadow: 2px 1px 8px -3px #000000;
+          box-shadow: 2px 1px 8px -3px #000000;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+  margin-top: 1rem;
+}
+
+.explorer button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.9;
+}
+
+.explorer {
+  text-align: center;
+}
+
+.explorer button {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)));
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9));
+}
+
+.fonction ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .fonction ol {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.fonction li {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  border: 1px solid red;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 1rem;
+  -webkit-box-shadow: 2px 1px 8px -3px #000000;
+          box-shadow: 2px 1px 8px -3px #000000;
+  list-style-type: none;
+}
+
+.fonction li i.fas {
+  color: blue;
+  margin-right: 1rem;
+}
+
+.menus {
+  background-color: #f6f6f6;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.menus__cards {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  border: 1px solid black;
+  height: 4rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 30rem;
+  border-radius: 1rem;
+}
+
+.card__image-1 {
+  height: 15rem;
+  background-image: url(".//..//../image/menu-1.jpg");
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */

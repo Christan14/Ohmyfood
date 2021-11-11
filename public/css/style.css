@@ -1,135 +1,185 @@
-@import url('https://fonts.googleapis.com/css2? family= Shrikhand & display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
-
-::before
-::after{
-    box-sizing: border-box;
-    border: 3px solid red;
+@import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+::before ::after {
+  box-sizing: border-box;
+  border: 3px solid red;
 }
 
-body{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-
-header{
-    font-family : 'Shrikhand', cursif ;
-    text-align: center;
-    box-shadow: 0px 2px 2px grey;
-    padding: 0.1rem;
-    position: relative;
+main {
+  margin: 0 7rem;
 }
 
-main .city{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    text-align: center;
-    background-color: #f3f3f3;
-    padding: 0.1rem;
+a {
+  text-decoration: color initial;
 }
 
-main .city i{
-    font-size: 1.5rem;
+h3,
+p {
+  margin: 0;
 }
 
-/* explorer */
-
-.explorer{
-    text-align: center;
+i {
+  font-size: -2rem;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-1%);
 }
 
-.explorer h2{
-    margin-top: 2rem;
-    font-size: 2rem;
-}
-.explorer p{
-    font-size: 1rem;
-}
-.explorer button{
-    color: white;
-    font-weight: 300;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 2rem;
-    box-shadow: 2px 1px 8px -3px #000000;
-    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0,9));
-    transition: transform 200ms;
-}
- 
-
-.explorer button:hover{
-    transform: scale(1.2);
-    opacity: 0.9;
+header {
+  font-family: "Shrikhand", cursif;
+  text-align: center;
+  box-shadow: 0px 2px 2px grey;
+  padding: 0.1rem;
+  position: relative;
 }
 
-main{
-  padding: 0 7rem;
+main .city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 0.1rem;
 }
-.fonction ol{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-}
-.fonction li{
-    position: relative;
-    background-color: #f6f6f6;
-    padding; 1.5rem 2rem; 
-    border: 1px solid red;
-    flex-grow: 1;
-    border-radius: 1rem;
-    box-shadow: 2px 1px 8px -3px #000000;
-    list-style-type: none;
+main .city i {
+  font-size: 1.5rem;
+  top: 50%;
+  transform: translateY(-6px);
 }
 
-li i.fas{
-    color: blue;
-    margin-right: 1rem;
+.explorer {
+  text-align: center;
 }
-.fonction li::before{
-    content: counter(setps);
-    counter-increment: steps; 
-    color: white;
-    background-color: #9356dc;
-    border-radius: 50%;
-    position: absolute;
-    width: 2rem;
-    heght: 1rem;
-    display: grid;
-    place-items: center;
-    left: -2rem;
-    top: 50%;
-    transform: translateY(-50%)
+.explorer h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
 }
-.fonction li:hover{
-    transform: scale(1.02)
+.explorer p {
+  font-size: 1rem;
 }
-
-.menu{
-    background-color: #f6f6f6;
+.explorer button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 2px 1px 8px -3px #000000;
+  transition: transform 200ms;
+  margin-top: 1rem;
+  background-color: #686868;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
 }
-
-.menu .cards{
-    border: 1px solid black;
-    heght: 4rem;
-    flex-grow: 1;
-    min-width: 30px;
+.explorer button:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
 }
 
-.menu .menu_cards{
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
+.explorer {
+  text-align: center;
+}
+.explorer button {
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9));
 }
 
-.cards .card_image{
-    background-image: url("./images./restaurants/menu1.jpg");
-    height: 15rem;
-    background-size: cover;
+.fonction ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .fonction ol {
+    flex-direction: column;
+  }
+}
+.fonction li {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 8px -3px #000000;
+}
+.fonction i.fas {
+  color: blue;
+  margin-right: 1rem;
+}
+.menus {
+  background-color: #f6f6f6;
+  margin-bottom: 2rem;
 }
 
+h2 {
+  margin-bottom: 2rem;
+}
+
+.menus__cards {
+  display: grid;
+  gap: 2rem;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+}
+.menus__cards .new {
+  border: 1px solid red;
+  position: relative;
+}
+.menus__cards .new::before {
+  content: " Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+  right: 1rem;
+  display: grid;
+  place-items: center;
+  top: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  height: 4rem;
+  flex-grow: 1;
+  min-width: 30rem;
+  border-radius: 1rem;
+}
+
+.card__image-1 {
+  height: 0.1rem;
+}
+
+img {
+  height: 10rem;
+  width: 100%;
+  border: 0 solid transparent;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+.card__description h3,
+.card__description p {
+  margin: 0.5rem;
+}
+.card__description h3 {
+  padding-top: 0.5rem;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1rem 2rem;
+  color: white;
+}
+footer h2 {
+  font-family: "shrikhand", "sans-serif";
+  font-weight: 500;
+  padding: 1rem 0;
+}
 
 /*# sourceMappingURL=style.css.map */
