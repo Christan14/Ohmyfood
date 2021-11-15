@@ -1,7 +1,6 @@
 .explorer{
     text-align: center;
     & h2{
-        margin-top: 2rem;
         font-size: 2rem;
     }
     & p{
@@ -28,5 +27,14 @@
         opacity: 0.9;
     }
     
+}
+
+.explorer{
+    text-align: center;
+    background-color: #f2f2F2;
+    padding: 30px 10px;
+    & button{
+        background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9));
+    }
 }
 

@@ -13,14 +13,25 @@ body {
 main {
   margin: 0 7rem;
 }
+@media (max-width: 1000px) {
+  main {
+    padding: 0 1rem;
+  }
+}
 
-a {
-  text-decoration: color initial;
+h2 {
+  padding: 2rem 0;
+  margin: 0;
 }
 
 h3,
 p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 i {
@@ -35,17 +46,19 @@ header {
   text-align: center;
   box-shadow: 0px 2px 2px grey;
   padding: 0.1rem;
-  position: relative;
 }
 
 main .city {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
   text-align: center;
   background-color: #f3f3f3;
   padding: 0.1rem;
+  width: 100%;
+  margin-bottom: 0rem;
+  box-shadow: 0px 6px 10px 0px #dbdbdb;
 }
 main .city i {
   font-size: 1.5rem;
@@ -57,7 +70,6 @@ main .city i {
   text-align: center;
 }
 .explorer h2 {
-  margin-top: 2rem;
   font-size: 2rem;
 }
 .explorer p {
@@ -83,47 +95,81 @@ main .city i {
 
 .explorer {
   text-align: center;
+  background-color: #f2f2F2;
+  padding: 30px 10px;
 }
 .explorer button {
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9));
 }
 
-.fonction ol {
+.div {
+  padding: 20px 20px 20px 0px;
+  margin-bottom: 50px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 6px 10px 0px #dbdbdb;
+}
+
+.bloc_function {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
 }
-@media (max-width: 768px) {
-  .fonction ol {
-    flex-direction: column;
-  }
+.bloc_function span {
+  background-color: #3356de;
+  color: #fff;
+  border-radius: 100%;
+  font-weight: 900;
+  font-size: 0.7rem;
+  position: absolute;
+  top: 17px;
+  left: -11px;
 }
-.fonction li {
-  position: relative;
-  background-color: #f6f6f6;
-  padding: 1.5rem 2rem;
-  flex-grow: 1;
-  border-radius: 1rem;
-  box-shadow: 2px 1px 8px -3px #000000;
-}
-.fonction i.fas {
-  color: blue;
-  margin-right: 1rem;
-}
+
 .menus {
   background-color: #f6f6f6;
   margin-bottom: 2rem;
 }
-
-h2 {
-  margin-bottom: 2rem;
+.menus .card__image {
+  height: 15rem;
+  border-radius: 1rem 1rem 0 0;
+  background-size: cover;
+}
+.menus .card__image-1 {
+  background-image: url("..//..//image/menu-1.jpg");
+}
+.menus .card__image-2 {
+  background-image: url("..//..//image/menu-2.jpg");
+}
+.menus .card__image-3 {
+  background-image: url("..//..//image/menu-3.jpg");
+}
+.menus .card__image-4 {
+  background-image: url("..//..//image/menu-4.jpg");
+}
+.menus .card__description {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+.menus .card__description h3, .menus .card__description p {
+  padding-top: 1rem;
+}
+.menus .card__description i {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .menus__cards {
   display: grid;
-  gap: 2rem;
-  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1000px) {
+  .menus__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .menus__cards .new {
   border: 1px solid red;
@@ -140,35 +186,6 @@ h2 {
   display: grid;
   place-items: center;
   top: 1rem;
-}
-
-.card {
-  border: 1px solid black;
-  height: 4rem;
-  flex-grow: 1;
-  min-width: 30rem;
-  border-radius: 1rem;
-}
-
-.card__image-1 {
-  height: 0.1rem;
-}
-
-img {
-  height: 10rem;
-  width: 100%;
-  border: 0 solid transparent;
-  border-radius: 1rem 1rem 0 0;
-  box-shadow: none;
-  object-fit: cover;
-}
-
-.card__description h3,
-.card__description p {
-  margin: 0.5rem;
-}
-.card__description h3 {
-  padding-top: 0.5rem;
 }
 
 footer {

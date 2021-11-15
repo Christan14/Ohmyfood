@@ -1,9 +1,0 @@
-.explorer {
-  text-align: center;
-}
-
-.explorer button {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)));
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9));
-}
-/*# sourceMappingURL=function.css.map */
