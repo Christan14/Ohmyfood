@@ -1,11 +1,14 @@
 @use "..//utils/variable.scss";
 @use "..//utils/colors.scss";
+@use "..//utils/mixins.scss";
 
-.menus {
-    background-color: #f6f6f6;
-    margin-bottom: 2rem;
+     
+#homepage-1 {
+    .menus {
+      background-color: #f6f6f6;
+      margin-bottom: 2rem;
+    }
    
-    
     .card {
         &__image {
           height: 15rem;
@@ -17,41 +20,26 @@
                 background-image: url("../../assets/menu-#{$i}.jpg");
             }
         }
-        &__description{
-            position: relative;
-            background-color: white;
-            border-radius: 0 0 1rem 1rem;
-            h3, p{
-                padding-top: 1rem;
-            }
-            i{
-                font-size: 2rem;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%)
-            }
+
+        &__description {
+           @include mixins.hart-animation;
         }
     }
-   
-}
 
-
-
-.menus__cards{
+    .menus__cards {
        display: grid;
        grid-template-columns: repeat(2, 1fr);
        gap: 2rem;
-       @media (max-width: variable.$breakpoint){
-        grid-template-columns: repeat(1, 1fr);
-       }
+        @media (max-width: variable.$breakpoint){
+         grid-template-columns: repeat(1, 1fr);
+        }
+    }
     
-
-
-    .new{
+    .new {
         position: relative;
     }
 
-    .new::before{
+    .new::before {
         content:" Nouveau";
         position: absolute;
         height: 2rem;
@@ -65,16 +53,4 @@
     }
 }
 
-
-
-
-
-
-        
-
-    
-
-    
-
-    
 

@@ -1,5 +1,4 @@
-@import "../utils/zoom";
-@import "../utils/box-shadow";
+@use "../utils/mixins";
 @import "../utils/colors.scss";
 @import "../utils/variable.scss";
 
@@ -38,9 +37,9 @@
         border: 1px soloid red;
         flex-grow: 1;
         border-radius: 1rem;
-        @include base-shadow;
+        @include mixins.box-shadox;
         &:hover {
-            @include zoom;
+            @include mixins.transform-zoom;
         }
         & i.fas{
             margin-right: 1rem;
