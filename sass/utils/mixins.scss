@@ -1,3 +1,6 @@
+@use "./colors.scss";
+
+
 @mixin gradient($opacity: 0.9){
     background-image: linear-gradient(
         to top, 
@@ -7,21 +10,25 @@
 } 
 
 @mixin box-shadox {
-    box-shadow: 2px 1px 8px -3px #000000;
+    box-shadow: 2px 1px 8px -3px colors.$lightgrey;
 }
 
 @mixin transform-zoom {
     transform: scale(1.02);
 }
 
-@mixin coeur($opacity: 1, $font-weight:400, $color: inherit) {
+@mixin font-awesome($font-weight: 400) {
     display: inline-block;
     font-style: normal;
-    ont-variant: normal;
+    font-variant: normal;
     text-rendering: auto;
-    -webkit-font-smothing: antialiased;
+    -webkit-font-snoothing: antialiased;
     font-family: "Font Awesome 5 Free";
     font-weight: $font-weight;
+}
+
+@mixin coeur($opacity: 1, $font-weight:400, $color: inherit) {
+    @include font-awesome($font-weight);
     content: "\f004";
     font-size: 2rem;
     position: absolute;
@@ -39,10 +46,10 @@
     position: relative;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
-    h3, p{
+    h3, p {
         padding-top: 1rem;
     }
-    &::before{
+    &::before {
         @include coeur;
     }
     &::after {
@@ -52,5 +59,22 @@
     &:hover::after {
         opacity: 1;
         transform: translateY(-50%) scale(1.1);
+    }
+}
+
+@mixin base_bout {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 1rem 2rem; 
+    border: none;
+    border-radius: 2rem;
+    transition: transform 200ms;
+    margin-top: 1rem;
+    background-color: #686868;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.2);
+        opacity: 0.9;
     }
 }

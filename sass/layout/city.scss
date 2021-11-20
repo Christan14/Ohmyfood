@@ -1,4 +1,4 @@
-main .city{
+main .city {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,10 +9,10 @@ main .city{
     width: 100%;
     margin-bottom: 0rem;
     box-shadow: 0px 6px 10px 0px #dbdbdb;
-    & i{
-    font-size: 1.5rem;
-    top: 50%;
-    transform: translateY(-3px);
-}
+    & i {
+      font-size: 1.5rem;
+      top: 50%;
+      transform: translateY(-3px);
+    }
 }
 
