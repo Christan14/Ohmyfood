@@ -13,8 +13,8 @@
     box-shadow: 2px 1px 8px -3px colors.$lightgrey;
 }
 
-@mixin transform-zoom($zoom-level: 1.02, $transformation: none) {
-    transform: $transformation scale($zoom-level);
+@mixin transform-zoom {
+    transform: scale(1.02);
 }
 
 @mixin font-awesome($font-weight: 400) {
@@ -75,8 +75,8 @@
     cursor: pointer;
     background-image: linear-gradient(
         to top, 
-        rgba(147, 86, 220, $opacity), 
-        rgba(225, 121, 218, $opacity)
+        rgba(147, 86, 220, 0.9), 
+        rgba(225, 121, 218, 0.9)
         );
     &:hover {
         transform: scale(1.2);

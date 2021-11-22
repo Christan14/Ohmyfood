@@ -9,10 +9,10 @@ body {
 
 #page-resto {
   header {
-    &:hover::before {
-      @include mixins.transform-zoom($zoom-level: 1.2, $tranformation: translateY(-50%));
-      //transform: translateY(-50%)
-    }
+    //&:hover::before {
+      //@include mixins.transform-zoom($zoom-level: 1.2, $tranform: translateY(-50%));
+      //transform: $tranform;
+    //}
     &::before {
      @include mixins.font-awesome($font-weight: 900);
      content: "\f060";
@@ -71,15 +71,7 @@ body {
  
   .menu-groupe {
     overflow: hidden;
-    
-   
     .menu-items {
-      $numberofitems: 3;
-      @for $i from 1 through $numberofitems {
-        &:nth-child(#{$i}) {
-         animation-delay: 100ms * $i;
-        }
-      }
       display: flex;
       overflow: hidden;
       border-radius: 1rem;
@@ -88,6 +80,13 @@ body {
       @include mixins.box-shadox;
       animation: apparaitre 1s;
       animation-fill-mode: both;
+      
+      $numberofitems: 3;
+      @for $i from 1 through $numberofitems {
+        &:nth-child(#{$i}) {
+         animation-delay: 100ms * $i;
+        }
+      }
       
       .menu-item__prix {
         margin-left: auto;

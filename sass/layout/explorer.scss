@@ -4,10 +4,11 @@
 
 .explorer {
     text-align: center;
-    background-color: #fafafa;
-    padding: 30px 10px;
+    margin: 2rem;
+
     & h2 {
         font-size: 2rem;
+        margin: 1rem;
     }
     & p {
         font-size: 1rem;
@@ -16,6 +17,7 @@
         @include mixins.box-shadox;
         @include mixins.gradient;
         @include mixins.base_bout;
+        font-size: 1.5rem;
     }
      
 }
