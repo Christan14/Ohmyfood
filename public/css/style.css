@@ -242,16 +242,16 @@ main .city h2 {
   background-size: cover;
 }
 #homepage-1 .card__image-1 {
-  background-image: url("..//..//assets/menu-1");
+  background-image: url("../../assets/menu-1.jpg");
 }
 #homepage-1 .card__image-2 {
-  background-image: url("..//..//assets/menu-2");
+  background-image: url("../../assets/menu-2.jpg");
 }
 #homepage-1 .card__image-3 {
-  background-image: url("..//..//assets/menu-3");
+  background-image: url("../../assets/menu-3.jpg");
 }
 #homepage-1 .card__image-4 {
-  background-image: url("..//..//assets/menu-4");
+  background-image: url("../../assets/menu-4.jpg");
 }
 #homepage-1 .card__description {
   position: relative;
