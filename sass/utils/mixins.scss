@@ -1,7 +1,7 @@
 @use "./colors.scss";
 
 
-@mixin gradient($opacity: 0.9){
+@mixin gradient($opacity: 0.9) {
     background-image: linear-gradient(
         to top, 
         rgba(147, 86, 220, $opacity), 

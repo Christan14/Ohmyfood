@@ -1,0 +1,31 @@
+main .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 0.1rem;
+  width: 100%;
+  margin-bottom: 0rem;
+  -webkit-box-shadow: 0px 6px 10px 0px #dbdbdb;
+          box-shadow: 0px 6px 10px 0px #dbdbdb;
+}
+
+main .city i {
+  font-size: 1.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+main .city h2 {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=city.css.map */

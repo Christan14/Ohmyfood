@@ -362,6 +362,10 @@ body {
   background-color: #F6F6F6;
 }
 
+#page-resto header:hover::before {
+  transform: scale(1.02);
+  transform: translateY(-50%);
+}
 #page-resto header::before {
   display: inline-block;
   position: absolute;
@@ -530,7 +534,7 @@ body {
 #page-resto .menu-groupe .menu-items:hover {
   cursor: pointer;
 }
-#page-resto .menu-groupe .menu-items:hover .menu-items__check {
+#page-resto .menu-groupe .menu-items:hover .menu-item__check {
   margin-right: 0;
 }
 #page-resto .menu-groupe .menu-items:hover i {

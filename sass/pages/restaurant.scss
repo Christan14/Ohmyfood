@@ -9,10 +9,10 @@ body {
 
 #page-resto {
   header {
-    //&:hover::before {
-      //@include mixins.transform-zoom($zoom-level: 1.2, $tranform: translateY(-50%));
-      //transform: $tranform;
-    //}
+    &:hover::before {
+      @include mixins.transform-zoom;
+      transform: $tranform;
+    }
     &::before {
      @include mixins.font-awesome($font-weight: 900);
      content: "\f060";
@@ -129,7 +129,7 @@ body {
 
       &:hover {
         cursor: pointer;
-        .menu-items__check {
+        .menu-item__check {
           margin-right: 0;
         }
         i {
@@ -143,8 +143,8 @@ body {
   .resto-main {
    padding: 0 1rem;
    background-color: colors.$lightergrey;
-    
   }
+
   
   section.order {
     height: 30vh;
