@@ -72,6 +72,13 @@ body {
   .menu-groupe {
     overflow: hidden;
     .menu-items {
+      $numberofitems: 3;
+      @for $i from 1 through $numberofitems {
+        &:nth-child(#{$i}) {
+         animation-delay: 100ms * $i;
+        }
+      }
+      
       display: flex;
       overflow: hidden;
       border-radius: 1rem;
@@ -81,12 +88,7 @@ body {
       animation: apparaitre 1s;
       animation-fill-mode: both;
       
-      $numberofitems: 3;
-      @for $i from 1 through $numberofitems {
-        &:nth-child(#{$i}) {
-         animation-delay: 100ms * $i;
-        }
-      }
+      
       
       .menu-item__prix {
         margin-left: auto;
@@ -147,7 +149,8 @@ body {
 
   
   section.order {
-    height: 30vh;
+    //height: 30vh;
+    margin-bottom: 2rem;
     display: grid;
     place-items: center;
     button {

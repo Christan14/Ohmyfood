@@ -61,9 +61,9 @@ main .city {
   padding: 1rem;
 }
 main .city i {
-  font-size: 1.5rem;
+  font-size: 2rem;
   top: 50%;
-  transform: translateY(-3px);
+  transform: translateY(-8px);
 }
 main .city h2 {
   font-size: 1rem;
@@ -120,6 +120,7 @@ main .city h2 {
   height: 100px;
   width: 100px;
   border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
   border-top: 5px solid #9356dc;
   border-bottom: 5px solid #9356dc;
   border-radius: 50%;
@@ -260,7 +261,7 @@ main .city h2 {
   padding: 1rem;
 }
 #homepage-1 .card__description h3, #homepage-1 .card__description p {
-  padding-top: 0.5rem;
+  padding-top: 0;
 }
 #homepage-1 .card__description::before {
   display: inline-block;
@@ -399,7 +400,7 @@ body {
   background-color: #F6F6F6;
 }
 #page-resto .resto__title h2 h3, #page-resto .resto__title h2 p {
-  padding-top: 0.5rem;
+  padding-top: 0;
 }
 #page-resto .resto__title h2::before {
   display: inline-block;
@@ -551,7 +552,7 @@ body {
   background-color: #F6F6F6;
 }
 #page-resto section.order {
-  height: 30vh;
+  margin-bottom: 2rem;
   display: grid;
   place-items: center;
 }

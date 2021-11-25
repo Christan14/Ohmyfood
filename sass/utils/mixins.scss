@@ -48,7 +48,7 @@
     border-radius: 0 0 1rem 1rem;
     padding: 1rem;
     h3, p {
-        padding-top: 0.5rem;
+        padding-top: 0;
     }
     &::before {
         @include coeur;
