@@ -6,7 +6,8 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1600px;
   font-family: "Roboto", "sans-serif";
 }
 
@@ -26,11 +27,11 @@ h4,
 h5,
 h6 {
   padding: 0;
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 p {
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 a {
@@ -55,15 +56,18 @@ header {
 
 main .city {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  text-align: center;
   background-color: #f3f3f3;
-  padding: 1rem;
+  padding: 1.25rem 1rem;
+  margin: 0 -2rem 0 -2rem;
 }
 main .city i {
-  font-size: 2rem;
+  font-size: 1rem;
   top: 50%;
-  transform: translateY(-8px);
+  transform: translateY(2%);
 }
 main .city h2 {
   font-size: 1rem;
@@ -71,11 +75,11 @@ main .city h2 {
 
 .explorer {
   text-align: center;
-  margin: 2rem;
+  margin: -2rem -1rem 0 -1rem;
+  background-color: #fafafa;
 }
 .explorer h2 {
-  font-size: 2rem;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 .explorer p {
   font-size: 1rem;
@@ -84,17 +88,15 @@ main .city h2 {
   box-shadow: 2px 1px 8px -3px #7e7e7e;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
   color: white;
-  font-weight: 300;
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
-  border: none;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: 0;
   border-radius: 2rem;
   transition: transform 200ms;
-  margin-top: 1rem;
+  margin: 1rem;
   background-color: #686868;
   cursor: pointer;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
-  font-size: 1.5rem;
 }
 .explorer button:hover {
   transform: scale(1.2);
@@ -147,19 +149,21 @@ main .city h2 {
 .bloc ol {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin: 0rem 2rem 1rem -1rem;
 }
 @media (max-width: 1000px) {
   .bloc ol {
     flex-direction: column;
   }
 }
+.bloc ol :hover {
+  background-color: #99e2d0;
+}
 .bloc li {
   position: relative;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 1.5rem 2rem;
-  border: 1px soloid red;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
@@ -175,11 +179,8 @@ main .city h2 {
   display: grid;
   place-items: center;
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: -1rem;
-}
-.bloc li :hover {
-  transform: scale(1.02);
 }
 .bloc li i.fas {
   margin-right: 1rem;
@@ -193,19 +194,21 @@ main .city h2 {
 .bloc ol {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin: 0rem 2rem 1rem -1rem;
 }
 @media (max-width: 1000px) {
   .bloc ol {
     flex-direction: column;
   }
 }
+.bloc ol :hover {
+  background-color: #99e2d0;
+}
 .bloc li {
   position: relative;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 1.5rem 2rem;
-  border: 1px soloid red;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
@@ -221,11 +224,8 @@ main .city h2 {
   display: grid;
   place-items: center;
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: -1rem;
-}
-.bloc li :hover {
-  transform: scale(1.02);
 }
 .bloc li i.fas {
   margin-right: 1rem;
@@ -258,7 +258,8 @@ main .city h2 {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
-  padding: 1rem;
+  padding: 10px;
+  box-shadow: 1px 4px 18px -10px #000;
 }
 #homepage-1 .card__description h3, #homepage-1 .card__description p {
   padding-top: 0;
@@ -360,7 +361,6 @@ body {
 }
 
 #page-resto header:hover::before {
-  transform: scale(1.02);
   transform: translateY(-50%);
 }
 #page-resto header::before {
@@ -382,12 +382,11 @@ body {
 #page-resto .banner img {
   display: block;
   width: 100%;
-  height: 70vh;
   object-fit: cover;
   object-position: center bottom;
 }
 #page-resto .resto__title {
-  margin-top: -2rem;
+  margin-top: -3rem;
 }
 #page-resto .resto__title h2 {
   font-family: "shrikhand", "sans-serif";
@@ -395,7 +394,8 @@ body {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
-  padding: 1rem;
+  padding: 10px;
+  box-shadow: 1px 4px 18px -10px #000;
   border-radius: 2rem 2rem 0 0;
   background-color: #F6F6F6;
 }
@@ -472,46 +472,53 @@ body {
   top: 1.5rem;
   left: 0rem;
 }
-#page-resto .menu-groupe {
+#page-resto .menu-groupe__list {
+  animation: apparaitre 2s;
+  animation-fill-mode: both;
+}
+#page-resto .menu-groupe__list:nth-child(1) {
+  animation-delay: 1000ms;
+}
+#page-resto .menu-groupe__list:nth-child(2) {
+  animation-delay: 2000ms;
+}
+#page-resto .menu-groupe__list:nth-child(3) {
+  animation-delay: 3000ms;
+}
+#page-resto .menu-groupe__list:nth-child(4) {
+  animation-delay: 4000ms;
+}
+#page-resto .menu-groupe__list:nth-child(5) {
+  animation-delay: 5000ms;
+}
+#page-resto .menu-groupe__list .menu-groupe {
   overflow: hidden;
 }
-#page-resto .menu-groupe .menu-items {
+#page-resto .menu-groupe__list .menu-items {
   display: flex;
   overflow: hidden;
   border-radius: 1rem;
   background-color: white;
   margin: 0.5rem;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
-  animation: apparaitre 1s;
-  animation-fill-mode: both;
 }
-#page-resto .menu-groupe .menu-items:nth-child(1) {
-  animation-delay: 100ms;
-}
-#page-resto .menu-groupe .menu-items:nth-child(2) {
-  animation-delay: 200ms;
-}
-#page-resto .menu-groupe .menu-items:nth-child(3) {
-  animation-delay: 300ms;
-}
-#page-resto .menu-groupe .menu-items .menu-item__prix {
+#page-resto .menu-groupe__list .menu-items .menu-item__prix {
   margin-left: auto;
   font-weight: 900;
   padding: 1rem;
   display: flex;
   align-items: flex-end;
 }
-#page-resto .menu-groupe .menu-items .menu-item__description {
-  padding: 1rem;
+#page-resto .menu-groupe__list .menu-items .menu-item__description {
   overflow: hidden;
+  margin: 0.5rem;
 }
-#page-resto .menu-groupe .menu-items .menu-item__description h4,
-#page-resto .menu-groupe .menu-items .menu-item__description p {
+#page-resto .menu-groupe__list .menu-items .menu-item__description h4,
+#page-resto .menu-groupe__list .menu-items .menu-item__description p {
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
-#page-resto .menu-groupe .menu-items .menu-item__check {
+#page-resto .menu-groupe__list .menu-items .menu-item__check {
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -521,7 +528,7 @@ body {
   width: 4rem;
   transition: margin-right 0.5s;
 }
-#page-resto .menu-groupe .menu-items .menu-item__check i {
+#page-resto .menu-groupe__list .menu-items .menu-item__check i {
   display: grid;
   place-items: center;
   background: white;
@@ -530,13 +537,13 @@ body {
   border-radius: 1rem;
   color: #99E2D0;
 }
-#page-resto .menu-groupe .menu-items:hover {
+#page-resto .menu-groupe__list .menu-items:hover {
   cursor: pointer;
 }
-#page-resto .menu-groupe .menu-items:hover .menu-item__check {
+#page-resto .menu-groupe__list .menu-items:hover .menu-item__check {
   margin-right: 0;
 }
-#page-resto .menu-groupe .menu-items:hover i {
+#page-resto .menu-groupe__list .menu-items:hover i {
   animation: quarter-spin 0.5s ease-in-out;
 }
 @keyframes quarter-spin {
@@ -549,6 +556,7 @@ body {
 }
 #page-resto .resto-main {
   padding: 0 1rem;
+  overflow: hidden;
   background-color: #F6F6F6;
 }
 #page-resto section.order {
@@ -558,13 +566,12 @@ body {
 }
 #page-resto section.order button {
   color: white;
-  font-weight: 300;
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
-  border: none;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: 0;
   border-radius: 2rem;
   transition: transform 200ms;
-  margin-top: 1rem;
+  margin: 1rem;
   background-color: #686868;
   cursor: pointer;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));

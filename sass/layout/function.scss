@@ -9,33 +9,38 @@
     & ol {
       display: flex;
       gap: 2rem;
-      margin-bottom: 2rem;
+      margin: 0rem 2rem 1rem -1rem;
+      //margin-bottom: 2rem;
         @media (max-width: 1000px) {
          flex-direction: column;
+        }
+        & :hover {
+            background-color: $secondaire;
         } 
        
     }
     & li {
         position: relative;
+        
         &::before {
             content: counter(steps);
             counter-increment: steps;
             color: white;
-            background-color: $purple;
+           background-color: $purple;
             border-radius: 50%;
             width: 2 * $tuto-bullet-height;
             height: 2 * $tuto-bullet-height;
             display: grid;
             place-items: center;
             position: absolute;
-            bottom: $tuto-bullet-height;
+            bottom: $tuto-bullet;
             left: -$tuto-bullet-height;
         }
 
         list-style-type: none;
         background-color: #f6f6f6;
         padding: 1.5rem 2rem;
-        border: 1px soloid red;
+        
         flex-grow: 1;
         border-radius: 1rem;
         @include mixins.box-shadox;

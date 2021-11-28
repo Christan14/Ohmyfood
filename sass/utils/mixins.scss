@@ -14,7 +14,8 @@
 }
 
 @mixin transform-zoom {
-    transform: scale(1.02);
+    //transform: scale(1.02);
+    //color: colors.$purple;
 }
 
 @mixin font-awesome($font-weight: 400) {
@@ -46,7 +47,8 @@
     position: relative;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
-    padding: 1rem;
+    padding: 10px;
+    box-shadow: 1px 4px 18px -10px #000;
     h3, p {
         padding-top: 0;
     }
@@ -65,13 +67,12 @@
 
 @mixin base_bout {
     color: white;
-    font-weight: 300;
-    font-size: 1.5rem;
-    padding: 1rem 2rem; 
-    border: none;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem; 
+    border: 0;
     border-radius: 2rem;
     transition: transform 200ms;
-    margin-top: 1rem;
+    margin: 1rem;
     background-color: #686868;
     cursor: pointer;
     background-image: linear-gradient(

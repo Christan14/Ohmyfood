@@ -4,11 +4,12 @@
 
 .explorer {
     text-align: center;
-    margin: 2rem;
+    margin: -2rem -1rem 0 -1rem;
+    background-color: #fafafa;
 
     & h2 {
-        font-size: 2rem;
-        margin: 1rem;
+        //font-size: 2rem;
+        margin-top: 1rem;
     }
     & p {
         font-size: 1rem;
@@ -17,8 +18,6 @@
         @include mixins.box-shadox;
         @include mixins.gradient;
         @include mixins.base_bout;
-        font-size: 1.5rem;
-        
     }
      
 }
