@@ -12,7 +12,8 @@ body {
 }
 
 main {
-  padding: 1rem;
+  padding: 0;
+  margin: 0;
 }
 @media (max-width: 1000px) {
   main {
@@ -347,6 +348,10 @@ footer h2 {
 }
 
 @keyframes apparaitre {
+  0% {
+    transform: translateY(50);
+    opacity: 0;
+  }
   100% {
     transform: translateY(0);
     opacity: 1;
