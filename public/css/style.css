@@ -559,12 +559,12 @@ body {
   overflow: hidden;
   background-color: #F6F6F6;
 }
-#page-resto section.order {
+#page-resto .order {
   margin-bottom: 2rem;
   display: grid;
   place-items: center;
 }
-#page-resto section.order button {
+#page-resto .order button {
   color: white;
   font-weight: 500;
   padding: 0.75rem 1.5rem;
@@ -576,7 +576,7 @@ body {
   cursor: pointer;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
 }
-#page-resto section.order button:hover {
+#page-resto .order button:hover {
   transform: scale(1.2);
   opacity: 0.9;
 }
