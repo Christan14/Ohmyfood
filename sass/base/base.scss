@@ -14,9 +14,9 @@ body {
 }
 
 main {
-    padding: O 7rem;
+    padding: 1rem;
     @media (max-width: 1000px) {
-        padding: 0 1rem;
+        padding: 1rem;
     }
 }
 
@@ -40,7 +40,7 @@ a {
 }
     
 i {
-    font-size: -2rem;
+    font-size: 2rem;
     right: 1rem;
     top: 50%;
     transform: translateY(-1%)
