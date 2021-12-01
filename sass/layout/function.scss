@@ -5,18 +5,29 @@
 
 
 .bloc {
-    counter-reset: steps;
+    margin-top: 2rem;
+    counter-reset: steps; 
+    h4 {
+            margin: 1px 1px -6px 17px;
+        } 
+
     & ol {
       display: flex;
       gap: 2rem;
-      margin: 0rem 2rem 1rem -1rem;
-      //margin-bottom: 2rem;
+      margin: 0rem 1.5rem 3rem 0rem;
+      padding: 24px;
+      width: 88%;
         @media (max-width: 1000px) {
          flex-direction: column;
         }
         & :hover {
             background-color: $secondaire;
-        } 
+        }
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+       
        
     }
     & li {
@@ -26,7 +37,7 @@
             content: counter(steps);
             counter-increment: steps;
             color: white;
-           background-color: $purple;
+            background-color: $purple;
             border-radius: 50%;
             width: 2 * $tuto-bullet-height;
             height: 2 * $tuto-bullet-height;
@@ -40,7 +51,7 @@
         list-style-type: none;
         background-color: #f6f6f6;
         padding: 1.5rem 2rem;
-        
+        width: 80%;
         flex-grow: 1;
         border-radius: 1rem;
         @include mixins.box-shadox;

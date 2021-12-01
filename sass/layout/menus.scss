@@ -7,6 +7,10 @@
     .menus {
       background-color: #f6f6f6;
       margin-bottom: 2rem;
+      h4 {
+        padding: 12px;
+        margin-bottom: 1px;
+      }
     }
    
     .card {
@@ -28,10 +32,15 @@
 
     .menus__cards {
        display: grid;
+       margin: 0 13px 70px 13px;
        grid-template-columns: repeat(2, 1fr);
-       gap: 2rem;
+       gap: 1rem;
         @media (max-width: variable.$breakpoint) {
          grid-template-columns: repeat(1, 1fr);
+        }
+        
+        h4 {
+            margin: 2rem 2rem 1rem 0;
         }
     }
     
