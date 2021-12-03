@@ -28,7 +28,7 @@ body {
   .banner img {
     display: block;
     width: 100%;
-    //height: 70vh;
+    height: 70vh;
     object-fit: cover;
     object-position: center bottom;
   }
@@ -48,10 +48,13 @@ body {
   .menu {
     display: grid;
     gap: 1rem;
+   
     grid-template-columns: repeat(3, 1fr);
     @media (max-width: variable.$breakpoint) {
       grid-template-columns: 1fr;
+     
     }
+    
     h3 {
       text-transform: uppercase;
       font-weight: 400;
@@ -68,6 +71,11 @@ body {
       }
     }
   }
+  & .menu-groupe {
+    overflow: hidden;
+    width: 116%;
+  }
+
   .menu-groupe__list {
     animation: apparaitre 2s;
     animation-fill-mode: both;
@@ -78,16 +86,14 @@ body {
         }
   }
  
-  .menu-groupe {
-    overflow: hidden;
-      }
+   
     .menu-items {
-     
       display: flex;
       overflow: hidden;
       border-radius: 1rem;
       background-color: white;
       margin: 0.5rem;
+      width: 85%;
       @include mixins.box-shadox;
       
       
@@ -151,6 +157,7 @@ body {
   .resto-main {
    padding: 0 1rem;
    overflow: hidden;
+   margin-top: 20px;
    background-color: colors.$lightergrey;
   }
 

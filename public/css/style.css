@@ -15,6 +15,13 @@ main {
   padding: 0;
   margin: 0;
 }
+@media (max-width: 1000px) {
+  main {
+    padding: 0 -1rem;
+    overflow: hidden;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -45,7 +52,6 @@ header {
   text-align: center;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   padding: 1rem;
-  margin-right: -17px;
   position: relative;
 }
 
@@ -57,7 +63,6 @@ main .city {
   text-align: center;
   background-color: #f3f3f3;
   padding: 1.25rem 1rem;
-  margin-right: -17px;
 }
 main .city i {
   font-size: 1rem;
@@ -65,13 +70,12 @@ main .city i {
   transform: translateY(-35%);
 }
 main .city h2 {
-  font-size: 1.2rem;
-  margin: 0 0 8px 0;
+  font-size: 1rem;
+  margin: 0 10px 8px 0;
 }
 
 .explorer {
   text-align: center;
-  margin: -1rem -1rem 0 -1rem;
   padding: 10px;
   background-color: #fafafa;
 }
@@ -255,7 +259,6 @@ main .city h2 {
 
 #homepage-1 .menus {
   background-color: #f6f6f6;
-  margin-bottom: 2rem;
 }
 #homepage-1 .menus h4 {
   padding: 12px;
@@ -409,6 +412,7 @@ body {
 #page-resto .banner img {
   display: block;
   width: 100%;
+  height: 70vh;
   object-fit: cover;
   object-position: center bottom;
 }
@@ -498,6 +502,10 @@ body {
   top: 1.5rem;
   left: 0rem;
 }
+#page-resto .menu-groupe {
+  overflow: hidden;
+  width: 116%;
+}
 #page-resto .menu-groupe__list {
   animation: apparaitre 2s;
   animation-fill-mode: both;
@@ -517,15 +525,13 @@ body {
 #page-resto .menu-groupe__list:nth-child(5) {
   animation-delay: 5000ms;
 }
-#page-resto .menu-groupe__list .menu-groupe {
-  overflow: hidden;
-}
 #page-resto .menu-groupe__list .menu-items {
   display: flex;
   overflow: hidden;
   border-radius: 1rem;
   background-color: white;
   margin: 0.5rem;
+  width: 85%;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 #page-resto .menu-groupe__list .menu-items .menu-item__prix {
@@ -584,6 +590,7 @@ body {
 #page-resto .resto-main {
   padding: 0 1rem;
   overflow: hidden;
+  margin-top: 20px;
   background-color: #F6F6F6;
 }
 #page-resto div.order {
